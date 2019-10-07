@@ -1,3 +1,464 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: square;
+	position: relative;
+	top: 10px;
+	left: 20px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Home page */
+.home-container{
+	display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	padding-bottom: 100px;
+}
+
+.header{
+	font-size: 60px;
+	margin-top: 170px;
+	margin-left: 50px;
+	text-align: center;
+
+}
+.header2{
+	font-size: 60px;
+	margin-left: 130px;
+}
+
+.header3{
+	font-size: 60px;
+	margin-left: 70px;
+}
+
+.home-image {
+	width:416px;
+	height:404px;
+	margin-top:90px;
+}
+
+div .button{
+	margin-left: 85px;
+	margin-top: 20px;
+}
 
 
+.button{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+	width: 150px;
+	padding: 10px 30px;
+	text-align: center;
+
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+div .button {
+justify-content: center;
+}
+
+a{
+	box-sizing: border-box;
+	margin-top: 20px;
+	color: grey;
+	margin: 20px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+  }
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container2{
+	margin: 0 auto;
+	width: 800px;
+}
+
+.container3{
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.top-content .text-container {
+    width: 50%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+	padding-top: 20px;
+	justify-content: space-evenly;
+}
+
+.top-content .text-container-2 {
+	width: 33.33%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: solid black 1px;
+}
+.top-content .text-container-3 {
+	width: 33.33%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+	padding-top: 20px;
+}
+nav {
+	flex-wrap: nowrap;
+	margin-top: 20px;
+}
+
+nav a{
+	text-decoration: none;
+}
+  .logo{
+	width: 150px;
+	/* Position relative and axis will help to move logo accross the page */
+	position: relative;
+	bottom: 5px;
+  }
+
+  .services-header-img{
+	  width: 800px;
+	  margin: 20px 0 20px 0;
+  }
+
+  .services {
+	  border-bottom: solid black 1px;
+	  padding-bottom: 30px;
+	  margin-bottom: 40px;
+  }
+
+  .services-container {
+	  display: flex;
+	  width: 800px;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+  }
+
+  .column-layout {
+	  width: calc(50% - 10px);
+	  margin-bottom: 15px;
+	  border: solid black 1px;
+	  padding: 10px;
+  }
+/* Calc/Calculate width of 50% - 10px provides some space */
+  .title{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+   }
+
+  .image2{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 500px;
+	margin-top: -270px;
+	box-sizing: border-box;
+	height:300px;
+	border-radius: 50%;
+	margin-top: -300px;
+	}
+
+  .pic{
+	height: 300px;
+  }
+  .line{
+	 display: flex;
+	border: .5px solid black;
+	margin-top: 70px;
+  }
+  .info{
+	box-sizing:border-box;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: row wrap;
+
+  }
+  .features{
+	box-sizing: border-box;
+
+  }
+  .features{
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   width: 430px;
+   margin-top: 30px
+  }
+  .about{
+	box-sizing: border-box;
+	width: 430px;
+	height: 100px;
+	margin-left: 500px;
+	margin-top: -100px;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   width: 430px;
+   margin-left: 500px;
+   margin-top: -96px
+  }
+
+  .mid{
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 1000px;
+
+  }
+  .middle-img{
+	box-sizing:border-box;
+  }
+
+  .middle-img-2{
+	box-sizing:border-box;
+	width: 800px;
+  }
+  .info2{
+	display: flex;
+	flex-direction: column;
+	}
+
+  .product{
+	box-sizing: border-box;
+	width: 280px;
+	margin-left: 350px;
+	margin-top: -120px;
+	margin-top: -124px;
+	margin-left: 300px;
+	width: 275px;
+
+  }
+  .vision{
+	box-sizing: border-box;
+	width: 280px;
+	margin-left: 700px;
+	margin-top: -127px;
+	margin-top: -124px;
+	margin-left: 600px;
+	width: 275px;
+  }
+
+  footer{
+	box-sizing:border-box;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+
+  }
+  .line{
+	box-sizing:border-box;
+	border: .5px solid black;
+	margin-top: 100px;
+	width: 1000px;
+  }
+
+  address{
+	display:flex;
+	width: 160px;
+  }
+
+  span{
+	box-sizing:border-box;
+	margin-left: 500px;
+	margin-bottom: 100px;
+	display: flex;
+	margin-left: 320px;
+  }
+
+  .marginline {
+	border-bottom: solid black 1px;
+	padding-top: 30px;
+	margin-top: 10px;
+  }
+
+  .footer-layout {
+	  display: flex;
+	  margin-left: 40%;
+  }
+
+  .button-layout {
+	margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .link{
+	background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .link:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+  footer {
+	  padding-bottom: 30px;
+	}
+
+@media screen and (max-width: 1000px) {
+
+	}
+	/* tablet */
+@media screen and (max-width: 500px) {
+
+	header {
+		flex-direction: column-reverse;
+	}
+
+	header > a {
+		text-align: center;
+		border-bottom: 1px solid black;
+		margin: 0;
+		padding: 20px;
+	}
+
+	nav  {
+		display: flex;
+		margin-top: 0;
+		flex-direction: row;
+	}
+	nav > a {
+		flex: 1;
+		text-align: center;
+		margin: 0;
+		padding: 16px 0;
+		border-bottom: 1px solid black;
+	}
+
+	.home-image {
+		display: none;
+	}
+
+	.home-container {
+		/* content-align: center;
+		 */
+		 justify-content: center;
+		 padding: 0;
+		 padding: 50px 0;
+	}
+
+	.header-banner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+ 	.header-banner >	.header,
+	.header-banner > .header2,
+	.header-banner > .header3,
+	.header-banner > .button {
+		margin: 0 !important;
+		text-align: center;
+	}
+
+	.header-banner > .button {
+		margin-top: 20px !important;
+	}
+
+	.top-content {
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		/* width: 100%; */
+		margin: 0;
+		padding: 16px 0;
+	}
+
+	.top-content > .text-container,
+	.top-content > .text-container-2,
+	.top-content > .text-container-3 {
+		flex: 1;
+		width: 100%;
+	}
+}
